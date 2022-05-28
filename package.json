@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "scripts": {
+    "watch": "tailwindcss -i ./src/style.css -o ./src/dist/style.css --watch"
+  },
+  "name": "web-faris-front",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
+}
