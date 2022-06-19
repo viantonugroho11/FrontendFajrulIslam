@@ -2,30 +2,519 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Fajrul Islam</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.discordapp.com/attachments/717657951887949849/978929993923047484/unknown.png"
+      type="image/x-icon"
+    />
   </head>
-  <body>
-    <div
-      id="app"
-      class="flex h-screen flex-col items-center justify-between py-8 text-center text-[#2c3e50] selection:bg-green-100"
-    >
-      <div>
-        <h1
-          class="bg-gradient-to-r from-green-600 to-sky-400 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent"
+  <body class="text-base antialiased">
+    <!-- nav -->
+    <header class="sticky -top-5 z-20 w-full bg-white/40 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-7xl justify-between px-20 pt-10 pb-5">
+        <!-- logo -->
+        <div class="flex items-center space-x-2">
+          <img
+            src="https://cdn.discordapp.com/attachments/717657951887949849/978929993923047484/unknown.png"
+            class="h-10 w-10"
+            alt="Fajrul Islam"
+          />
+          <h1 class="font-bold">FAJRUL ISLAM</h1>
+        </div>
+        <ul class="flex items-center justify-center space-x-10">
+          <a class="hover:text-hover font-extrabold" href="index.html"
+            >BERANDA</a
+          >
+          <a class="hover:text-hover font-extrabold" href="about/index.html"
+            >TENTANG</a
+          >
+          <a class="hover:text-hover font-extrabold" href="">PROYEK</a>
+          <a class="hover:text-hover font-extrabold" href="">BLOG</a>
+          <a class="hover:text-hover font-extrabold" href="">ACARA</a>
+        </ul>
+      </nav>
+    </header>
+    <div class="mx-auto mt-5 mb-10 max-w-7xl">
+      <!-- JUMBOTRON -->
+      <div class="relative">
+        <div
+          class="absolute z-10 flex h-full w-full flex-col items-center justify-center"
         >
-          Hello !
-        </h1>
-        <h3 class="my-4 text-2xl font-bold text-gray-500">
-          Vite + JS + tailwindcss v3
-        </h3>
-        <a href="https://vitejs.dev/guide/features.html" target="_blank"
-          >Documentation</a
-        >
+          <p class="font-semibold text-white md:text-xl lg:text-2xl">
+            Assalamu’alaikum warahmatullah wabarakatuh
+          </p>
+          <p class="text-2xl font-bold text-white md:text-5xl lg:text-7xl">
+            Ahlan Wa Sahlan!
+          </p>
+        </div>
+        <img
+          class="mx-auto w-5/6 brightness-[.40]"
+          src="https://cdn.discordapp.com/attachments/717657951887949849/978932827494166599/unknown.png"
+          alt=""
+        />
       </div>
-      <img class="block" src="./src/assets/powered-by-vitawind-bright.png" />
+      <!-- TENTANG KAMI -->
+      <div class="mx-20 mt-32 grid grid-cols-3 gap-20">
+        <img
+          class="shadow-lg"
+          src="https://cdn.discordapp.com/attachments/717657951887949849/979014735003529237/unknown.png"
+          alt=""
+        />
+        <div class="col-span-2 flex flex-col justify-center space-y-3">
+          <h1 class="font-body text-4xl font-bold">Tentang Kami</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit dolorum, quam laborum asperiores placeat ducimus
+            repudiandae molestiae atque veniam voluptas distinctio molestias
+            repellendus non porro modi! Incidunt rerum quam molestiae minima
+            enim id quis sint iure dolorem soluta fugit inventore consectetur,
+            atque quibusdam officiis quas quae hic, itaque similique dolor.
+          </p>
+          <button
+            class="bg-base hover:border-base self-start rounded-full border-4 border-transparent px-5 py-1 font-semibold text-white hover:bg-transparent hover:text-base"
+          >
+            Lihat Selengkapnya
+          </button>
+        </div>
+      </div>
+      <!-- PROKER -->
+      <div class="mx-40 mt-20 grid grid-cols-2">
+        <div class="my-20 flex flex-col items-center justify-center space-y-4">
+          <h2 class="text-center text-5xl font-bold leading-relaxed">
+            10+ Program Kerja Terealisasikan
+          </h2>
+          <button
+            class="bg-base hover:border-base rounded-full border-4 border-transparent px-5 py-1 font-semibold text-white hover:bg-transparent hover:text-base"
+          >
+            Lihat Selengkapnya
+          </button>
+        </div>
+        <div class="flex items-center justify-center">
+          <img
+            src="https://media.discordapp.net/attachments/717657951887949849/979410128484859964/unknown.png?width=409&height=398"
+          />
+        </div>
+      </div>
+      <!-- BLOG -->
+      <div class="mt-20">
+        <div class="mx-10 flex items-center justify-between">
+          <h3 class="text-4xl font-bold">BLOG</h3>
+          <a
+            class="hover:text-hover flex items-center text-xl font-semibold"
+            href=""
+          >
+            <span>More</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="bg-base mt-5 flex flex-col space-y-5 rounded-3xl p-10 md:flex-row md:space-x-10 md:space-y-0"
+        >
+          <div
+            class="flex flex-col space-y-4 rounded-xl bg-white/25 py-20 px-10 text-white"
+          >
+            <p class="flex">
+              Jul 24, 2021 Admin &nbsp;
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4317 8.94027H7.5557V10.8201H9.4317V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M11.3077 8.94027H13.1837V10.8201H11.3077V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M16.9357 8.94027H15.0597V10.8201H16.9357V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M3.80371 5.18061V20.2192L8.3061 16.8356C8.63048 16.5908 9.02567 16.4588 9.4317 16.4596H18.8117C19.8478 16.4596 20.6877 15.618 20.6877 14.5798V5.18061C20.6877 4.14241 19.8478 3.30078 18.8117 3.30078H5.67971C4.64362 3.30078 3.80371 4.14241 3.80371 5.18061ZM5.67971 16.4596V5.18061H18.8117V14.5798H8.80699C8.40091 14.5787 8.00561 14.7107 7.6814 14.9557L5.67971 16.4596Z"
+                    fill="#F3F3F3"
+                  />
+                </svg> </span
+              >2
+            </p>
+            <p class="text-3xl font-semibold">
+              Sapien eget mi proin sed libero enim
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna
+              id volutpat lacus laoreet non curabitur gravida arcu ac. Purus
+              faucibus ornare...
+            </p>
+            <a href="#" class="self-end font-semibold">Lihat Selengkapnya</a>
+          </div>
+          <div
+            class="flex flex-col space-y-4 rounded-xl bg-white/25 py-20 px-10 text-white"
+          >
+            <p class="flex">
+              Jul 24, 2021 Admin &nbsp;
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4317 8.94027H7.5557V10.8201H9.4317V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M11.3077 8.94027H13.1837V10.8201H11.3077V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M16.9357 8.94027H15.0597V10.8201H16.9357V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M3.80371 5.18061V20.2192L8.3061 16.8356C8.63048 16.5908 9.02567 16.4588 9.4317 16.4596H18.8117C19.8478 16.4596 20.6877 15.618 20.6877 14.5798V5.18061C20.6877 4.14241 19.8478 3.30078 18.8117 3.30078H5.67971C4.64362 3.30078 3.80371 4.14241 3.80371 5.18061ZM5.67971 16.4596V5.18061H18.8117V14.5798H8.80699C8.40091 14.5787 8.00561 14.7107 7.6814 14.9557L5.67971 16.4596Z"
+                    fill="#F3F3F3"
+                  />
+                </svg> </span
+              >2
+            </p>
+            <p class="text-3xl font-semibold">
+              Sapien eget mi proin sed libero enim
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna
+              id volutpat lacus laoreet non curabitur gravida arcu ac. Purus
+              faucibus ornare...
+            </p>
+            <a href="#" class="self-end font-semibold">Lihat Selengkapnya</a>
+          </div>
+          <div
+            class="flex flex-col space-y-4 rounded-xl bg-white/25 py-20 px-10 text-white"
+          >
+            <p class="flex">
+              Jul 24, 2021 Admin &nbsp;
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4317 8.94027H7.5557V10.8201H9.4317V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M11.3077 8.94027H13.1837V10.8201H11.3077V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M16.9357 8.94027H15.0597V10.8201H16.9357V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M3.80371 5.18061V20.2192L8.3061 16.8356C8.63048 16.5908 9.02567 16.4588 9.4317 16.4596H18.8117C19.8478 16.4596 20.6877 15.618 20.6877 14.5798V5.18061C20.6877 4.14241 19.8478 3.30078 18.8117 3.30078H5.67971C4.64362 3.30078 3.80371 4.14241 3.80371 5.18061ZM5.67971 16.4596V5.18061H18.8117V14.5798H8.80699C8.40091 14.5787 8.00561 14.7107 7.6814 14.9557L5.67971 16.4596Z"
+                    fill="#F3F3F3"
+                  />
+                </svg> </span
+              >2
+            </p>
+            <p class="text-3xl font-semibold">
+              Sapien eget mi proin sed libero enim
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna
+              id volutpat lacus laoreet non curabitur gravida arcu ac. Purus
+              faucibus ornare...
+            </p>
+            <a href="#" class="self-end font-semibold">Lihat Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <!-- ACARA -->
+      <div class="mt-20">
+        <div class="mx-10 flex items-center justify-between">
+          <h3 class="text-4xl font-bold">ACARA</h3>
+          <a
+            class="hover:text-hover flex items-center text-xl font-semibold"
+            href="#"
+          >
+            <span>More</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="bg-base mt-5 flex space-x-10 rounded-3xl p-10">
+          <div
+            class="flex flex-col space-y-4 rounded-xl bg-white/25 py-20 px-10 text-white"
+          >
+            <p class="flex">
+              Jul 24, 2021 Admin &nbsp;
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4317 8.94027H7.5557V10.8201H9.4317V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M11.3077 8.94027H13.1837V10.8201H11.3077V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M16.9357 8.94027H15.0597V10.8201H16.9357V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M3.80371 5.18061V20.2192L8.3061 16.8356C8.63048 16.5908 9.02567 16.4588 9.4317 16.4596H18.8117C19.8478 16.4596 20.6877 15.618 20.6877 14.5798V5.18061C20.6877 4.14241 19.8478 3.30078 18.8117 3.30078H5.67971C4.64362 3.30078 3.80371 4.14241 3.80371 5.18061ZM5.67971 16.4596V5.18061H18.8117V14.5798H8.80699C8.40091 14.5787 8.00561 14.7107 7.6814 14.9557L5.67971 16.4596Z"
+                    fill="#F3F3F3"
+                  />
+                </svg> </span
+              >2
+            </p>
+            <p class="text-3xl font-semibold">
+              Sapien eget mi proin sed libero enim
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna
+              id volutpat lacus laoreet non curabitur gravida arcu ac. Purus
+              faucibus ornare...
+            </p>
+            <a href="#" class="self-end font-semibold">Lihat Selengkapnya</a>
+          </div>
+          <div
+            class="flex flex-col space-y-4 rounded-xl bg-white/25 py-20 px-10 text-white"
+          >
+            <p class="flex">
+              Jul 24, 2021 Admin &nbsp;
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4317 8.94027H7.5557V10.8201H9.4317V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M11.3077 8.94027H13.1837V10.8201H11.3077V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M16.9357 8.94027H15.0597V10.8201H16.9357V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M3.80371 5.18061V20.2192L8.3061 16.8356C8.63048 16.5908 9.02567 16.4588 9.4317 16.4596H18.8117C19.8478 16.4596 20.6877 15.618 20.6877 14.5798V5.18061C20.6877 4.14241 19.8478 3.30078 18.8117 3.30078H5.67971C4.64362 3.30078 3.80371 4.14241 3.80371 5.18061ZM5.67971 16.4596V5.18061H18.8117V14.5798H8.80699C8.40091 14.5787 8.00561 14.7107 7.6814 14.9557L5.67971 16.4596Z"
+                    fill="#F3F3F3"
+                  />
+                </svg> </span
+              >2
+            </p>
+            <p class="text-3xl font-semibold">
+              Sapien eget mi proin sed libero enim
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna
+              id volutpat lacus laoreet non curabitur gravida arcu ac. Purus
+              faucibus ornare...
+            </p>
+            <a href="#" class="self-end font-semibold">Lihat Selengkapnya</a>
+          </div>
+          <div
+            class="flex flex-col space-y-4 rounded-xl bg-white/25 py-20 px-10 text-white"
+          >
+            <p class="flex">
+              Jul 24, 2021 Admin &nbsp;
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4317 8.94027H7.5557V10.8201H9.4317V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M11.3077 8.94027H13.1837V10.8201H11.3077V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M16.9357 8.94027H15.0597V10.8201H16.9357V8.94027Z"
+                    fill="#F3F3F3"
+                  />
+                  <path
+                    d="M3.80371 5.18061V20.2192L8.3061 16.8356C8.63048 16.5908 9.02567 16.4588 9.4317 16.4596H18.8117C19.8478 16.4596 20.6877 15.618 20.6877 14.5798V5.18061C20.6877 4.14241 19.8478 3.30078 18.8117 3.30078H5.67971C4.64362 3.30078 3.80371 4.14241 3.80371 5.18061ZM5.67971 16.4596V5.18061H18.8117V14.5798H8.80699C8.40091 14.5787 8.00561 14.7107 7.6814 14.9557L5.67971 16.4596Z"
+                    fill="#F3F3F3"
+                  />
+                </svg> </span
+              >2
+            </p>
+            <p class="text-3xl font-semibold">
+              Sapien eget mi proin sed libero enim
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna
+              id volutpat lacus laoreet non curabitur gravida arcu ac. Purus
+              faucibus ornare...
+            </p>
+            <a href="#" class="self-end font-semibold">Lihat Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <!-- SUBSCRIBE EMAIL -->
+      <div class="m-20 flex flex-col items-center justify-center space-y-4">
+        <h2 class="text-3xl font-bold">Tetap Terhubung dengan Kami</h2>
+        <p>agar kamu tetap update informasi dari kami</p>
+        <form>
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="email"
+            class="ring-base rounded-tl-xl rounded-bl-xl py-2 pl-4 ring-2"
+          /><button
+            type="submit"
+            class="bg-base ring-base rounded-tr-xl rounded-br-xl px-4 py-2 text-white ring-2"
+          >
+            Terhubung!
+          </button>
+        </form>
+      </div>
     </div>
-    <script type="module" src="./src/main.js"></script>
+    <!-- FOOTER -->
+    <footer class="bg-base rounded-tl-3xl rounded-tr-3xl">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 gap-10 py-10 px-40">
+        <div class="flex items-center space-x-3">
+          <img
+            src="https://cdn.discordapp.com/attachments/717657951887949849/979407599336300614/unknown.png"
+            class="h-24 w-24 rounded-full bg-white"
+            alt="Fajrul Islam"
+          />
+          <h1 class="text-2xl font-bold text-white">FAJRUL ISLAM</h1>
+        </div>
+        <div class="flex flex-col items-end space-y-5 justify-self-end">
+          <div id="social" class="flex space-x-3">
+            <svg
+              width="31"
+              height="30"
+              viewBox="0 0 31 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.7281 26.1059C12.6953 26.1059 12.3378 26.09 11.1543 26.0386C10.2313 26.0085 9.32036 25.8224 8.46054 25.4882C6.9729 24.9138 5.79657 23.7463 5.21819 22.2701C4.89434 21.4139 4.71966 20.5093 4.70164 19.595C4.6326 18.4232 4.6326 18.0391 4.6326 15.0534C4.6326 12.0358 4.64863 11.6836 4.70164 10.5155C4.72005 9.60239 4.89473 8.69907 5.21819 7.84407C5.79594 6.36591 6.97418 5.19735 8.46424 4.6247C9.32555 4.30203 10.2362 4.12827 11.1567 4.11097C12.3341 4.04492 12.7212 4.04492 15.7281 4.04492C18.7855 4.04492 19.1369 4.06082 20.3019 4.11097C21.2248 4.12842 22.1379 4.30216 23.0018 4.6247C24.4914 5.198 25.6694 6.36633 26.2478 7.84407C26.5772 8.71153 26.7528 9.62897 26.7669 10.5558C26.8359 11.7276 26.8359 12.1105 26.8359 15.095C26.8359 18.0795 26.8186 18.4709 26.7669 19.6292C26.7485 20.5444 26.5734 21.4498 26.2491 22.3068C25.6692 23.784 24.4911 24.9519 23.0018 25.5261C22.1391 25.8468 21.2279 26.0201 20.3068 26.0386C19.1295 26.1059 18.7436 26.1059 15.7281 26.1059ZM15.6862 5.98119C12.6707 5.98119 12.3575 5.99587 11.1802 6.04846C10.4774 6.0577 9.7815 6.18636 9.12257 6.42887C8.14956 6.79827 7.37963 7.55906 7.00333 8.52292C6.75703 9.1838 6.62733 9.88183 6.61992 10.5864C6.55458 11.7716 6.55458 12.0823 6.55458 15.0534C6.55458 17.989 6.56568 18.3449 6.61992 19.5228C6.63096 20.2203 6.76058 20.9109 7.00333 21.5655C7.38018 22.5287 8.14998 23.289 9.12257 23.6583C9.78105 23.9025 10.4773 24.0312 11.1802 24.0388C12.3736 24.1072 12.6879 24.1072 15.6862 24.1072C18.7103 24.1072 19.0234 24.0926 20.1909 24.0388C20.8941 24.0303 21.5906 23.9016 22.2498 23.6583C23.2169 23.2858 23.9818 22.5273 24.3579 21.568C24.6037 20.9065 24.7334 20.2082 24.7413 19.5033H24.7549C24.8079 18.3339 24.8079 18.022 24.8079 15.0338C24.8079 12.0456 24.7943 11.7313 24.7413 10.5632C24.7303 9.86651 24.6006 9.17672 24.3579 8.52292C23.9827 7.56222 23.2176 6.80229 22.2498 6.42887C21.5908 6.18514 20.8942 6.05644 20.1909 6.04846C18.9988 5.98119 18.6869 5.98119 15.6862 5.98119ZM15.7281 20.7032C13.4227 20.7047 11.3434 19.328 10.46 17.2153C9.57663 15.1025 10.0631 12.6699 11.6926 11.0518C13.322 9.43368 15.7735 8.94891 17.9037 9.82355C20.0339 10.6982 21.4233 12.7599 21.4238 15.0473C21.4204 18.1676 18.8731 20.6971 15.7281 20.7032ZM15.7281 11.3753C13.6855 11.3753 12.0296 13.0182 12.0296 15.0448C12.0296 17.0714 13.6855 18.7143 15.7281 18.7143C17.7707 18.7143 19.4266 17.0714 19.4266 15.0448C19.4218 13.0202 17.7687 11.38 15.7281 11.3753ZM21.6457 10.5032C20.9127 10.5005 20.3203 9.90949 20.3216 9.18222C20.323 8.45495 20.9176 7.86609 21.6506 7.86609C22.3836 7.86609 22.9782 8.45494 22.9796 9.18221C22.9799 9.53309 22.8394 9.86965 22.5891 10.1175C22.3388 10.3654 21.9993 10.5042 21.6457 10.5032Z"
+                fill="#F3F3F3"
+              />
+            </svg>
+            <svg
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M23.7444 7.84494C24.7993 7.21923 25.5886 6.23397 25.965 5.07314C24.9737 5.65669 23.8891 6.06776 22.7582 6.28857C21.1902 4.64292 18.7059 4.24245 16.6935 5.31092C14.681 6.37939 13.6386 8.6523 14.1488 10.8596C10.0884 10.6573 6.30541 8.75437 3.74121 5.62423C2.40301 7.91431 3.08686 10.8418 5.304 12.3144C4.50226 12.2888 3.7183 12.0734 3.01749 11.6862C3.01749 11.7072 3.01749 11.7283 3.01749 11.7493C3.01795 14.1348 4.71251 16.1896 7.06919 16.6624C6.32553 16.8631 5.54548 16.8927 4.78856 16.7488C5.45133 18.7888 7.34638 20.1864 9.50633 20.2281C7.7174 21.6212 5.50814 22.3766 3.23402 22.3729C2.83093 22.3735 2.42816 22.3505 2.0278 22.3041C4.33713 23.7764 7.0249 24.5579 9.76993 24.5551C13.5889 24.5811 17.2591 23.0874 19.9595 20.408C22.6599 17.7285 24.1651 14.087 24.1386 10.298C24.1386 10.0808 24.1335 9.86482 24.1233 9.64999C25.1123 8.94081 25.9659 8.06228 26.644 7.05566C25.7226 7.46088 24.7452 7.72692 23.7444 7.84494Z"
+                fill="#F3F3F3"
+              />
+            </svg>
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.6004 0.703125C21.0158 0.703125 27.0494 5.80071 27.0494 12.0677C27.0494 14.5762 26.1164 16.8344 24.1663 19.0593C21.3453 22.4414 15.036 26.5604 13.6004 27.1906C12.205 27.8033 12.3664 26.8457 12.4303 26.4676L12.4353 26.4361L12.627 25.237C12.6724 24.8799 12.7194 24.325 12.5833 23.9713C12.432 23.581 11.8368 23.3779 11.3997 23.2799C4.93578 22.3924 0.151276 17.6851 0.151276 12.0677C0.151276 5.80071 6.18655 0.703125 13.6004 0.703125ZM8.59393 14.1578H6.0302V9.3123C6.0302 9.24017 6.00281 9.17098 5.95399 9.11981C5.90517 9.06865 5.83889 9.03968 5.76963 9.03921H4.82483C4.79039 9.03921 4.75629 9.04628 4.72447 9.06C4.69265 9.07372 4.66374 9.09384 4.63939 9.1192C4.61503 9.14456 4.59572 9.17466 4.58254 9.20779C4.56936 9.24092 4.56257 9.27644 4.56257 9.3123V15.4147C4.56257 15.4865 4.59115 15.5547 4.63654 15.602V15.6038L4.6399 15.6073L4.64327 15.6108C4.69202 15.6596 4.75719 15.6866 4.82483 15.686H8.59393C8.73851 15.686 8.85451 15.5635 8.85451 15.4129V14.4326C8.85473 14.3968 8.84817 14.3612 8.83519 14.328C8.82222 14.2948 8.80308 14.2645 8.77889 14.239C8.75469 14.2135 8.7259 14.1932 8.69417 14.1793C8.66243 14.1653 8.62837 14.158 8.59393 14.1578ZM9.92371 9.03921H10.8685C11.0131 9.03921 11.1291 9.16175 11.1291 9.3123V15.4147C11.1291 15.5652 11.0114 15.686 10.8685 15.686H9.92371C9.85445 15.686 9.78799 15.6575 9.73886 15.6067C9.68972 15.5558 9.6619 15.4868 9.66145 15.4147V9.3123C9.66145 9.16175 9.77913 9.03921 9.92371 9.03921ZM16.4179 9.03921H17.3594C17.5056 9.03921 17.6233 9.16175 17.6233 9.3123V15.4147C17.6233 15.5652 17.5056 15.686 17.3611 15.686H16.4179C16.3952 15.6862 16.3726 15.6832 16.3507 15.6773H16.3473C16.3411 15.6752 16.3349 15.6728 16.3288 15.6703L16.3204 15.6668L16.3087 15.6615C16.304 15.6595 16.2995 15.6572 16.2952 15.6545L16.2902 15.6528L16.2734 15.6423L16.2717 15.6405C16.2454 15.6222 16.2227 15.5991 16.2044 15.5722L13.5146 11.7911V15.4147C13.5148 15.4505 13.5083 15.4859 13.4953 15.5191C13.4823 15.5522 13.4631 15.5823 13.4389 15.6077C13.4147 15.6331 13.3859 15.6532 13.3541 15.667C13.3224 15.6807 13.2884 15.6878 13.254 15.6878H12.3109C12.2417 15.6878 12.1752 15.6592 12.1261 15.6084C12.0769 15.5576 12.0491 15.4886 12.0487 15.4164V9.3123C12.0487 9.16175 12.1663 9.03921 12.3109 9.03921H13.2641L13.2725 9.04096H13.2826L13.2877 9.04271H13.2977L13.3146 9.04797H13.3179L13.3213 9.04972L13.3381 9.05497L13.3465 9.05847C13.3517 9.06051 13.3567 9.06285 13.3616 9.06547L13.3667 9.06722L13.37 9.06897C13.3776 9.07312 13.3849 9.0778 13.3919 9.08298L13.3969 9.08648L13.4053 9.09173V9.09348C13.4087 9.09348 13.4104 9.09698 13.4121 9.09873C13.4167 9.10198 13.4212 9.10548 13.4255 9.10923L13.4306 9.11449C13.4449 9.12824 13.4579 9.14349 13.4692 9.16L16.1557 12.9394V9.3123C16.1557 9.16175 16.2734 9.03921 16.4179 9.03921ZM22.8315 10.2944C22.8315 10.4449 22.7138 10.5674 22.5709 10.5674H20.0055V11.6003H22.5692C22.7138 11.6003 22.8298 11.7228 22.8298 11.8716V12.8536C22.8298 13.0042 22.7121 13.1267 22.5692 13.1267H20.0055V14.1596H22.5692C22.7138 14.1596 22.8298 14.2821 22.8298 14.4309V15.4129C22.8298 15.5635 22.7121 15.686 22.5692 15.686H18.8001C18.7658 15.6862 18.7318 15.6793 18.7001 15.6658C18.6684 15.6523 18.6395 15.6324 18.6152 15.6073L18.6118 15.602C18.5649 15.5518 18.5384 15.4847 18.5378 15.4147V9.3123C18.5378 9.23878 18.5664 9.17225 18.6101 9.12499L18.6152 9.11974L18.6169 9.11799C18.6656 9.06762 18.7314 9.03931 18.8001 9.03921H22.5692C22.7138 9.03921 22.8298 9.16175 22.8298 9.3123V10.2944H22.8315Z"
+                fill="#F3F3F3"
+              />
+            </svg>
+            <svg
+              width="29"
+              height="29"
+              viewBox="0 0 29 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.10052 14.049C3.10189 19.7927 7.31157 24.6833 13.0291 25.5834V17.4233H10.0436V14.049H13.0327V11.4804C12.899 10.2633 13.3181 9.05022 14.1761 8.17028C15.0341 7.29033 16.2422 6.83468 17.4727 6.9269C18.3559 6.94105 19.2369 7.0191 20.1087 7.16041V10.0315H18.6213C18.1092 9.96491 17.5943 10.1327 17.2218 10.4876C16.8492 10.8425 16.6593 11.346 16.7054 11.8564V14.049H19.9663L19.445 17.4245H16.7054V25.5834C22.8889 24.6139 27.2249 19.0109 26.5723 12.8337C25.9197 6.65645 20.5068 2.06741 14.2552 2.39112C8.00348 2.71482 3.10152 7.83796 3.10052 14.049Z"
+                fill="#F3F3F3"
+              />
+            </svg>
+            <svg
+              width="33"
+              height="33"
+              viewBox="0 0 33 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.8008 25.4041H16.7739C16.6905 25.4041 8.34802 25.3881 6.24324 24.821C5.08584 24.5116 4.18197 23.6143 3.87082 22.4658C3.49234 20.3473 3.30957 18.199 3.32479 16.0476C3.31501 13.8926 3.50273 11.7412 3.88562 9.61994C4.20531 8.4704 5.10522 7.56896 6.26072 7.24078C8.30767 6.70703 16.4202 6.70703 16.7645 6.70703H16.7927C16.8774 6.70703 25.2414 6.72304 27.3247 7.29015C28.4796 7.60106 29.3817 8.49654 29.6944 9.64262C30.0849 11.769 30.2682 13.9277 30.2418 16.0889C30.2512 18.2413 30.063 20.39 29.6796 22.5085C29.3644 23.6556 28.46 24.5509 27.3031 24.861C25.2589 25.3987 17.1451 25.4041 16.8008 25.4041ZM14.1109 12.0511L14.1042 20.0573L21.1139 16.0542L14.1109 12.0511Z"
+                fill="#F3F3F3"
+              />
+            </svg>
+          </div>
+          <p class="text-white">@ 2022, Fajrul Islam</p>
+          <p class="text-white">Made by xxxx</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
+<script type="module" src="./src/main.js"></script>
